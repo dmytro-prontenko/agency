@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Strategic Agency</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__navigation">
+          <a href="#" class="header__logo">
+            <img src="./assets/header/main_logo.png" alt="Main logo" />
+          </a>
+          <button class="header__menu-btn">
+            <img src="./assets/header/burger.png" alt="Burger menu button" />
+          </button>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#about" class="header__nav-link">About us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__nav-link">Services</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#testimonials" class="header__nav-link">Testimonials</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__hire-btn header__nav-link">Hire Us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__title-wrapper">
+            <h1 class="hero__title">Strategic Agency</h1>
+            <div class="hero__description">
+              We believe in the power of bold ideas that can solve business
+              challenges.
+            </div>
+          </div>
+          <a href="#" class="hero__learn-more-btn">Learn more</a>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./assets/hero/slide_1.png"
+                alt="Slide 1"
+              />
+              <h3 class="image-label">Intro</h3>
+              <div class="image-description">By the same illusion which lifts the horizon.</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./assets/hero/slide_2.png"
+                alt="Slide 2"
+              />
+              <h3 class="image-label">Intro</h3>
+              <div class="image-description">By the same illusion which lifts the horizon.</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./assets/hero/slide_3.png"
+                alt="Slide 3"
+              />
+              <h3 class="image-label">Intro</h3>
+              <div class="image-description">By the same illusion which lifts the horizon.</div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Footer</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
