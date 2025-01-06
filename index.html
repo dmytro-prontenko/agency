@@ -20,6 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Strategic Agency</title>
   </head>
@@ -104,6 +111,104 @@
 
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section id="contacts" class="contacts-section">
+        <div class="contacts__section-wrapper">
+          <section id="contact-form" class="contact-form">
+            <h2 class="contacts-title">Send us a message</h2>
+            <form class="form" name="contact" method="POST" netlify>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  autocomplete="off"
+                />
+                <div class="form-line"></div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="off"
+                />
+                <div class="form-line"></div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your message"
+                  autocomplete="off"
+                ></textarea>
+                <div class="form-line"></div>
+              </div>
+              <button type="submit" class="blue-btn">Send</button>
+            </form>
+          </section>
+          <section id="contact-data">
+            <h2 class="contacts-title">Contact us</h2>
+            <ul class="contacts-data__list">
+              <li class="contacts-data__item">
+                <h3 class="contacts-subtitle">Call us</h3>
+                <div class="contacts__contact">
+                  <a
+                    class="link-wrapper"
+                    href="tel:654 321 987"
+                    rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    >654 321 987</a
+                  >
+                </div>
+              </li>
+              <li class="contacts-data__item">
+                <h3 class="contacts-subtitle">Visit us</h3>
+                <div class="contacts__contact">
+                  <a
+                    class="link-wrapper"
+                    href="https://maps.app.goo.gl/Ko3WFAQfJHZaSfKy8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    >2905 West Drive, Buffalo Grove</a
+                  >
+                </div>
+              </li>
+              <li class="contacts-data__item">
+                <h3 class="contacts-subtitle">our socials</h3>
+                <ul class="contacts-data__links-list">
+                  <li class="contacts-data__links-list-item">
+                    <a
+                      class="link-wrapper"
+                      href="#"
+                      rel="noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      ><i class="fa-brands fa-facebook-f fa-2x"></i
+                    ></a>
+                  </li>
+                  <li class="contacts-data__links-list-item">
+                    <a
+                      class="link-wrapper"
+                      href="#"
+                      rel="noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      ><i class="fa-brands fa-twitter fa-2x"></i
+                    ></a>
+                  </li>
+                  <li class="contacts-data__links-list-item">
+                    <a
+                      class="link-wrapper"
+                      href="#"
+                      rel="noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      ><i class="fa-brands fa-instagram fa-2x"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
     </main>

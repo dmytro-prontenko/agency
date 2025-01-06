@@ -21,3 +21,10 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
 });
+
+
+const textarea = document.querySelector("textarea");
+textarea.addEventListener("input", () => {
+  textarea.style.height = "auto";
+  textarea.style.height = textarea.scrollHeight + "px";
+});
