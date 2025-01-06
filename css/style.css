@@ -72,6 +72,11 @@ ol {
 a {
   cursor: pointer;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  /* Додатково можна вимкнути виділення тексту */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 button {
@@ -149,6 +154,7 @@ a {
 
   @media screen and (min-width: 768px) {
     max-width: 1000px;
+    padding: 20px 41px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -233,8 +239,45 @@ a {
   background: #2060f6;
 }
 
+/* -------------HERO------------- */
+
 .hero {
   background-color: var(--header-footer-bg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+  }
 }
 
 .hero__container {
@@ -242,7 +285,16 @@ a {
   flex-direction: column;
   gap: 72px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+
+  padding: 48px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 48px 41px;
+  }
+
+  @media screen and (min-width: 1024px) {
+  }
 }
 
 .hero__title {
@@ -284,13 +336,22 @@ a {
   line-height: normal;
 }
 
+.swiper-section {
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
 .swiper {
   width: 100%;
-  max-width: 768px;
+  max-width: 1024px;
   border-radius: 50px;
-  /* height: 390px; */
 
-  /* object-fit: cover; */
+  @media screen and (min-width: 1024px) {
+    border-radius: 50px 0 0 50px;
+  }
 }
 
 .swiper-slide {
@@ -309,7 +370,7 @@ a {
   /* max-width: 500px; */
   height: 390px;
   object-fit: cover;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 
 .swiper-button-prev,
@@ -405,7 +466,7 @@ a {
   @media screen and (min-width: 768px) {
     flex-direction: row;
     max-width: 1000px;
-    padding: 80px 44px;
+    padding: 80px 41px;
     justify-content: space-between;
   }
 
@@ -546,8 +607,10 @@ a {
   transition: all 0.2s ease;
 }
 
-.link-wrapper:hover {
-  color: var(--accent-blue);
+@media (hover: hover) {
+  .link-wrapper:hover {
+    color: var(--accent-blue);
+  }
 }
 
 /* --------------FOOTER--------------*/
@@ -556,8 +619,7 @@ a {
   padding: 40px 20px 80px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 44px;
-    padding-bottom: 44px;
+    padding: 44px 41px;
   }
 }
 
@@ -576,8 +638,8 @@ a {
 
   @media screen and (min-width: 1440px) {
     max-width: 1200px;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 }
 
