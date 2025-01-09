@@ -5,6 +5,7 @@
   --text-dark: #6c788b;
   --accent-blue: #2060f6;
   --body-bg: #f2f6fa;
+  --section-subtitle: #c0cdd7;
 
   --max-mob-width: 500px;
   --max-tablet-width: 1000px;
@@ -822,4 +823,228 @@ a {
   @media screen and (min-width: 768px) {
     min-height: 105px;
   }
+}
+
+/* -------------Services------------- */
+
+.services {
+}
+
+.services__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: var(--max-mob-width);
+  padding: 48px 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: var(--max-tablet-width);
+    padding: 148px 41px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 176px;
+    padding: 251px 41px 148px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: var(--max-desktop-width);
+  }
+}
+
+.services__subtitle {
+  margin-bottom: 16px;
+  color: var(--section-subtitle);
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.services__title {
+  margin-bottom: 24px;
+
+  color: var(--text-darkest);
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 41.6px */
+}
+
+.services__grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 24px;
+  grid-template-areas:
+    /* "description" */
+    "second"
+    "first"
+    "third"
+    "fourth";
+  margin-top: 0;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      /* "description ." */
+      ". second"
+      "first second"
+      "first third"
+      "fourth third"
+      "fourth .";
+    margin-top: -71px;
+  }
+}
+
+.first {
+  grid-area: first;
+  /* place-self: flex-end; */
+}
+
+.second {
+  grid-area: second;
+  /* place-self: flex-start; */
+}
+
+.third {
+  grid-area: third;
+  /* place-self: flex-start; */
+}
+
+.fourth {
+  grid-area: fourth;
+  /* place-self: flex-end; */
+}
+
+.services__content {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--text-dark);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+
+  padding: 32px;
+  width: 100%;
+
+  background: var(--text-white);
+  border-radius: 30px;
+
+  /* @media screen and (min-width: 768px) {
+    max-width: 264px;
+  } */
+}
+
+.services__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+
+  background: #eaeffd;
+  padding: 2px 12px;
+}
+
+.services__number span {
+  color: var(--accent-blue);
+
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.services__subitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.services__subitem-content {
+  color: var(--text-dark);
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 19.5px */
+}
+
+.services__subitem-content:last-of-type {
+  padding-bottom: 20px;
+}
+
+.services__learn-more-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.services__learn-more-link span:first-child {
+  border-radius: 50%;
+  background: var(--accent-blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+}
+
+.services__learn-more-link span:last-child {
+  color: #334563;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
