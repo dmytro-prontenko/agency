@@ -37,7 +37,11 @@
           <a href="#" class="header__logo">
             <img src="./assets/header/main_logo.png" alt="Main logo" />
           </a>
-          <button class="header__menu-btn">
+          <button
+            class="header__menu-btn js-menu-btn"
+            type="button"
+            aria-expanded="false"
+          >
             <img src="./assets/header/burger.png" alt="Burger menu button" />
           </button>
           <ul class="header__nav-list">
@@ -55,7 +59,9 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__hire-btn header__nav-link">Hire Us</a>
+        <a href="#contacts" class="header__hire-btn header__nav-link"
+          >Hire Us</a
+        >
       </div>
     </header>
 
@@ -326,6 +332,19 @@
         </div>
       </section>
 
+      <section class="vision">
+        <div class="vision-wrapper">
+          <div class="vision__content-description">
+            <h2 class="vision__title">Vision, Passion, Results</h2>
+            <div class="vision__content">
+              We are sure that first-rate job is possible only if all three
+              components are united.
+            </div>
+          </div>
+          <a href="#" class="apply-btn">Apply</a>
+        </div>
+      </section>
+
       <section id="contacts" class="contacts-section">
         <div class="contacts__section-wrapper">
           <section id="contact-form" class="contact-form">
@@ -436,13 +455,63 @@
           <ul class="footer__nav-list">
             <li><a class="footer__nav-link" href="#about">About us</a></li>
             <li><a class="footer__nav-link" href="#">Home</a></li>
-            <li><a class="footer__nav-link" href="#work">Work</a></li>
+            <li><a class="footer__nav-link" href="#">Work</a></li>
             <li><a class="footer__nav-link" href="#services">Services</a></li>
             <li><a class="footer__nav-link" href="#contacts">Contact Us</a></li>
           </ul>
         </nav>
       </div>
     </footer>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 6L18 18"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a href="#about" class="mobile-menu__nav-link">About us</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="#services" class="mobile-menu__nav-link">Services</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="#testimonials" class="mobile-menu__nav-link"
+              >Testimonials</a
+            >
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="#contacts" class="mobile-menu__nav-link">Contact Us</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="#contacts" class="mobile-menu__nav-link">Hire Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
