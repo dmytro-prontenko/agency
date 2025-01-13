@@ -1253,18 +1253,18 @@ a {
   background: var(--text-white);
 
   @media screen and (min-width: 768px) {
-    background: url("../assets/vision/medium.png") 10% 10% no-repeat,
-      url("../assets/vision/small.png") 30% 10% no-repeat,
-      url("../assets/vision/small.png") 25% 45% no-repeat,
-      url("../assets/vision/small.png") 75% 60% no-repeat,
-      url("../assets/vision/small.png") 15% 75% no-repeat,
-      url("../assets/vision/big.png") 80% 85% no-repeat,
-      url("../assets/vision/small.png") 75% 65% no-repeat,
-      url("../assets/vision/medium.png") 90% 35% no-repeat,
-      url("../assets/vision/small.png") 45% 90% no-repeat,
-      url("../assets/vision/small.png") 5% 95% no-repeat,
-      url("../assets/vision/small.png") 65% 10% no-repeat,
-      url("../assets/vision/small.png") 35% 30% no-repeat, var(--text-white);
+    background: url("../assets/vision/medium.webp") 10% 10% no-repeat,
+      url("../assets/vision/small.webp") 30% 10% no-repeat,
+      url("../assets/vision/small.webp") 25% 45% no-repeat,
+      url("../assets/vision/small.webp") 75% 60% no-repeat,
+      url("../assets/vision/small.webp") 15% 75% no-repeat,
+      url("../assets/vision/big.webp") 80% 85% no-repeat,
+      url("../assets/vision/small.webp") 75% 65% no-repeat,
+      url("../assets/vision/medium.webp") 90% 35% no-repeat,
+      url("../assets/vision/small.webp") 45% 90% no-repeat,
+      url("../assets/vision/small.webp") 5% 95% no-repeat,
+      url("../assets/vision/small.webp") 65% 10% no-repeat,
+      url("../assets/vision/small.webp") 35% 30% no-repeat, var(--text-white);
   }
 }
 
